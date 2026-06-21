@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Polygon Skill Forge | Building Every Side of Your Success</title>
+<meta name="description" content="Polygon Skill Forge provides aptitude training, coding programs, communication development, soft skills training, group discussion practice, and placement readiness programs for students and job seekers.">
+<meta name="keywords" content="Skill Development, Aptitude Training, Coding Classes, Placement Training, Communication Skills, Soft Skills, Interview Preparation, Career Development">
+<meta property="og:title" content="Polygon Skill Forge | Building Every Side of Your Success">
+<meta property="og:description" content="Transforming Students into Industry-Ready Professionals">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: '#2563EB',
+        secondary: '#4F46E5',
+        accent: '#10B981',
+        dark: '#0F172A',
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+      }
+    }
+  }
+}
+</script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:#0F172A;background:#fff;overflow-x:hidden}
+h1,h2,h3,h4,h5,h6{font-family:'Poppins',sans-serif}
+
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:#f1f5f9}
+::-webkit-scrollbar-thumb{background:linear-gradient(#2563EB,#4F46E5);border-radius:5px}
+
+/* Gradient text */
+.gt{background:linear-gradient(135deg,#60A5FA,#A78BFA 50%,#34D399);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.gt-d{background:linear-gradient(135deg,#2563EB,#4F46E5 60%,#10B981);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+/* Navbar */
+#nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:all .35s ease}
+#nav.scrolled{background:rgba(255,255,255,.97);backdrop-filter:blur(20px);box-shadow:0 1px 30px rgba(0,0,0,.07)}
+.nlnk{position:relative;font-size:.875rem;font-weight:500;text-decoration:none;transition:color .2s;padding:4px 0}
+.nlnk-d{color:#475569}.nlnk-d:hover{color:#2563EB}
+.nlnk-l{color:rgba(255,255,255,.75)}.nlnk-l:hover{color:#fff}
+.nlnk::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:2px;background:linear-gradient(90deg,#2563EB,#4F46E5);border-radius:1px;transition:width .3s}
+.nlnk:hover::after{width:100%}
+.ntxt-d{color:#0F172A;transition:color .35s}.ntxt-l{color:#fff;transition:color .35s}
+#nav.scrolled .ntxt-d{color:#0F172A}
+#nav:not(.scrolled) .ntxt-d{color:#fff}
+#nav.scrolled .switch-lnk{color:#475569}
+#nav:not(.scrolled) .switch-lnk{color:rgba(255,255,255,.75)}
+#nav.scrolled .switch-lnk:hover{color:#2563EB}
+#nav:not(.scrolled) .switch-lnk:hover{color:#fff}
+
+/* Buttons */
+.btn-p{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#2563EB,#4F46E5);color:#fff;font-weight:600;padding:12px 24px;border-radius:12px;font-size:.875rem;text-decoration:none;transition:all .3s;box-shadow:0 4px 20px rgba(37,99,235,.3);cursor:pointer;border:none;font-family:'Inter',sans-serif}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(37,99,235,.45)}
+.btn-o{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;font-weight:600;padding:10px 24px;border-radius:12px;border:2px solid rgba(255,255,255,.25);font-size:.875rem;text-decoration:none;transition:all .3s;cursor:pointer;font-family:'Inter',sans-serif}
+.btn-o:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.5);transform:translateY(-2px)}
+.btn-p-lg{padding:14px 32px;font-size:.95rem;border-radius:14px}
+
+/* Hero */
+.hero{background:linear-gradient(145deg,#04081A 0%,#0F172A 40%,#19174a 70%,#0F172A 100%);position:relative;overflow:hidden}
+.hgrid{position:absolute;inset:0;background-image:linear-gradient(rgba(37,99,235,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(37,99,235,.05) 1px,transparent 1px);background-size:50px 50px}
+
+/* Glass */
+.glass{background:rgba(255,255,255,.07);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.12)}
+
+/* Section tag */
+.stag{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,rgba(37,99,235,.1),rgba(79,70,229,.07));border:1px solid rgba(37,99,235,.2);color:#2563EB;font-size:.72rem;font-weight:600;padding:5px 14px;border-radius:100px;letter-spacing:.07em;text-transform:uppercase;font-family:'Inter',sans-serif}
+.stag-w{color:rgba(255,255,255,.6);border-color:rgba(255,255,255,.15);background:rgba(255,255,255,.05)}
+
+/* Cards */
+.prog-card{background:#fff;border-radius:20px;padding:32px;border:1px solid #E2E8F0;transition:all .35s cubic-bezier(.16,1,.3,1);position:relative;overflow:hidden}
+.prog-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#2563EB,#4F46E5,#10B981);transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
+.prog-card:hover::before{transform:scaleX(1)}
+.prog-card:hover{transform:translateY(-8px);box-shadow:0 28px 64px rgba(37,99,235,.13);border-color:rgba(37,99,235,.15)}
+
+.feat-card{background:#fff;border-radius:16px;padding:28px;border:1px solid #E2E8F0;transition:all .3s ease}
+.feat-card:hover{transform:translateY(-5px);box-shadow:0 16px 44px rgba(37,99,235,.1);border-color:rgba(37,99,235,.2)}
+
+.tcard{background:#fff;border-radius:20px;padding:32px;border:1px solid #E2E8F0;transition:all .3s ease;position:relative;overflow:hidden}
+.tcard::before{content:'\201C';position:absolute;top:10px;right:18px;font-size:5.5rem;font-family:'Poppins',sans-serif;color:#2563EB;opacity:.07;line-height:1;pointer-events:none}
+.tcard:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(37,99,235,.1)}
+
+.ccard{background:#fff;border-radius:20px;padding:36px 28px;border:1px solid #E2E8F0;transition:all .3s ease;text-align:center}
+.ccard:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(37,99,235,.1);border-color:rgba(37,99,235,.2)}
+
+/* Reveal animations */
+.rv{opacity:0;transform:translateY(40px);transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+.rv-l{opacity:0;transform:translateX(-40px);transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+.rv-r{opacity:0;transform:translateX(40px);transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+.rv-s{opacity:0;transform:scale(.92);transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+.in{opacity:1!important;transform:none!important}
+.d1{transition-delay:.1s}.d2{transition-delay:.18s}.d3{transition-delay:.26s}.d4{transition-delay:.34s}.d5{transition-delay:.42s}.d6{transition-delay:.5s}
+
+/* Floats */
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+@keyframes fl2{0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}
+@keyframes fl3{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes rot{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes rotr{from{transform:rotate(0deg)}to{transform:rotate(-360deg)}}
+@keyframes pg{0%,100%{opacity:.15}50%{opacity:.4}}
+.fl{animation:fl 7s ease-in-out infinite}
+.fl2{animation:fl2 9s ease-in-out infinite;animation-delay:2s}
+.fl3{animation:fl3 5.5s ease-in-out infinite;animation-delay:3.5s}
+.rot{animation:rot 45s linear infinite}
+.rotr{animation:rotr 35s linear infinite}
+.pg{animation:pg 3s ease-in-out infinite}
+
+/* Counter */
+.cnt{font-family:'Poppins',sans-serif;font-weight:800;background:linear-gradient(135deg,#2563EB,#4F46E5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1}
+
+/* Icon boxes */
+.ib{width:52px;height:52px;min-width:52px;border-radius:14px;display:flex;align-items:center;justify-content:center}
+.ib-b{background:linear-gradient(135deg,rgba(37,99,235,.12),rgba(79,70,229,.08));color:#2563EB}
+.ib-g{background:linear-gradient(135deg,rgba(16,185,129,.12),rgba(5,150,105,.08));color:#10B981}
+.ib-p{background:linear-gradient(135deg,rgba(139,92,246,.12),rgba(79,70,229,.08));color:#8B5CF6}
+.ib-o{background:linear-gradient(135deg,rgba(249,115,22,.12),rgba(245,158,11,.08));color:#F97316}
+.ib-c{background:linear-gradient(135deg,rgba(6,182,212,.12),rgba(14,165,233,.08));color:#06B6D4}
+
+/* Timeline dot */
+.tldot{width:52px;height:52px;min-width:52px;border-radius:50%;background:linear-gradient(135deg,#2563EB,#4F46E5);display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:700;font-size:1.05rem;color:#fff;box-shadow:0 0 0 5px rgba(37,99,235,.15),0 0 0 10px rgba(37,99,235,.06)}
+
+/* Social */
+.soc{width:44px;height:44px;border-radius:12px;background:rgba(37,99,235,.08);border:1px solid rgba(37,99,235,.15);display:flex;align-items:center;justify-content:center;color:#2563EB;transition:all .3s;text-decoration:none}
+.soc:hover{background:linear-gradient(135deg,#2563EB,#4F46E5);border-color:transparent;color:#fff;transform:translateY(-3px);box-shadow:0 8px 20px rgba(37,99,235,.3)}
+/* Footer social variant */
+.ftr .soc{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1);color:rgba(255,255,255,.5)}
+.ftr .soc:hover{background:linear-gradient(135deg,#2563EB,#4F46E5);border-color:transparent;color:#fff}
+
+/* Topic pill */
+.tp{display:inline-flex;align-items:center;background:#F1F5F9;color:#475569;font-size:.72rem;font-weight:500;padding:3px 10px;border-radius:6px}
+
+/* Star */
+.str{color:#F59E0B}
+
+/* Mobile menu */
+#mob{display:none}.mob-open{display:block!important}
+
+/* Dark section */
+.ds{background:linear-gradient(145deg,#04081A 0%,#0F172A 40%,#19174a 70%,#0F172A 100%)}
+
+/* Footer */
+.ftr{background:#030609}
+
+/* Stat divider */
+.sdiv{width:1px;background:rgba(255,255,255,.15)}
+
+/* About feature check */
+.chk{width:20px;height:20px;min-width:20px;border-radius:50%;background:rgba(16,185,129,.12);display:flex;align-items:center;justify-content:center;color:#10B981}
+</style>
+</head>
+<body class="antialiased">
+
+<!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+<nav id="nav" class="py-4">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="flex items-center justify-between h-12">
+
+      <!-- Logo -->
+      <a href="#hero" class="flex items-center gap-3 no-underline">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="18,2 33,10 33,26 18,34 3,26 3,10" fill="url(#ng1)"/>
+          <polygon points="18,8 27,13 27,23 18,28 9,23 9,13" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+          <circle cx="18" cy="18" r="4" fill="white" opacity="0.9"/>
+          <defs>
+            <linearGradient id="ng1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#2563EB"/>
+              <stop offset="100%" stop-color="#4F46E5"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="leading-tight">
+          <span class="ntxt-d font-bold text-[1.05rem]" style="font-family:'Poppins',sans-serif">Polygon</span><span style="color:#2563EB;font-family:'Poppins',sans-serif;font-weight:700;font-size:1.05rem"> Skill Forge</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="#about" class="nlnk switch-lnk">About</a>
+        <a href="#programs" class="nlnk switch-lnk">Programs</a>
+        <a href="#why-us" class="nlnk switch-lnk">Why Us</a>
+        <a href="#journey" class="nlnk switch-lnk">Journey</a>
+        <a href="#vision" class="nlnk switch-lnk">Vision</a>
+        <a href="#contact" class="nlnk switch-lnk">Contact</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="#programs" class="hidden lg:flex btn-p text-sm">Explore Programs</a>
+        <button id="mob-btn" class="lg:hidden p-2 rounded-lg" onclick="document.getElementById('mob').classList.toggle('mob-open')">
+          <i data-lucide="menu" class="w-6 h-6 ntxt-d"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mob" class="lg:hidden bg-white border-t border-gray-100 shadow-xl">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex flex-col gap-1">
+      <a href="#about" onclick="document.getElementById('mob').classList.remove('mob-open')" class="block py-3 text-sm font-medium text-gray-700 hover:text-primary border-b border-gray-50">About</a>
+      <a href="#programs" onclick="document.getElementById('mob').classList.remove('mob-open')" class="block py-3 text-sm font-medium text-gray-700 hover:text-primary border-b border-gray-50">Programs</a>
+      <a href="#why-us" onclick="document.getElementById('mob').classList.remove('mob-open')" class="block py-3 text-sm font-medium text-gray-700 hover:text-primary border-b border-gray-50">Why Us</a>
+      <a href="#journey" onclick="document.getElementById('mob').classList.remove('mob-open')" class="block py-3 text-sm font-medium text-gray-700 hover:text-primary border-b border-gray-50">Journey</a>
+      <a href="#vision" onclick="document.getElementById('mob').classList.remove('mob-open')" class="block py-3 text-sm font-medium text-gray-700 hover:text-primary border-b border-gray-50">Vision</a>
+      <a href="#contact" onclick="document.getElementById('mob').classList.remove('mob-open')" class="block py-3 text-sm font-medium text-gray-700 hover:text-primary">Contact</a>
+      <a href="#programs" class="btn-p mt-4 justify-center">Explore Programs</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section id="hero" class="hero min-h-screen flex items-center relative pt-16">
+  <div class="hgrid"></div>
+
+  <!-- Radial glows -->
+  <div class="absolute pointer-events-none" style="width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(37,99,235,.18) 0%,transparent 70%);top:-200px;left:-150px"></div>
+  <div class="absolute pointer-events-none" style="width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(79,70,229,.15) 0%,transparent 70%);bottom:-100px;right:-100px"></div>
+  <div class="absolute pointer-events-none" style="width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(16,185,129,.1) 0%,transparent 70%);top:50%;right:30%"></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 py-24 w-full relative z-10">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Left -->
+      <div>
+        <div class="stag stag-w mb-7 rv">
+          <i data-lucide="zap" class="w-3 h-3"></i>
+          Transforming Students Into Professionals
+        </div>
+        <h1 class="text-5xl lg:text-6xl xl:text-[4.2rem] font-bold text-white leading-[1.08] mb-6 rv d1" style="font-family:'Poppins',sans-serif">
+          Transform Your<br>
+          <span class="gt">Skills.</span><br>
+          Accelerate Your<br>
+          <span class="gt">Career.</span>
+        </h1>
+        <p class="text-slate-400 text-[1.05rem] leading-relaxed mb-4 max-w-lg rv d2">
+          Polygon Skill Forge empowers students with the practical skills, confidence, and industry readiness required to succeed in placements, careers, and life.
+        </p>
+        <p class="text-slate-500 text-sm leading-relaxed mb-10 max-w-lg rv d3">
+          Through aptitude training, coding programs, communication development, and interview preparation, we help students become future-ready professionals.
+        </p>
+        <div class="flex flex-wrap gap-4 mb-14 rv d3">
+          <a href="#programs" class="btn-p btn-p-lg">
+            <i data-lucide="compass" class="w-4 h-4"></i>
+            Explore Programs
+          </a>
+          <a href="#vision" class="btn-o" style="padding:12px 28px">
+            Our Vision
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Hero Stats -->
+        <div class="flex flex-wrap gap-0 rv d4">
+          <div class="pr-8 py-2">
+            <div class="text-white font-bold text-2xl" style="font-family:'Poppins',sans-serif">10,000+</div>
+            <div class="text-slate-400 text-xs mt-0.5">Students Trained</div>
+          </div>
+          <div class="sdiv mx-2 my-2 hidden sm:block"></div>
+          <div class="px-8 py-2">
+            <div class="text-white font-bold text-2xl" style="font-family:'Poppins',sans-serif">95%</div>
+            <div class="text-slate-400 text-xs mt-0.5">Student Satisfaction</div>
+          </div>
+          <div class="sdiv mx-2 my-2 hidden sm:block"></div>
+          <div class="px-8 py-2">
+            <div class="text-white font-bold text-2xl" style="font-family:'Poppins',sans-serif">500+</div>
+            <div class="text-slate-400 text-xs mt-0.5">Hiring Partners</div>
+          </div>
+          <div class="sdiv mx-2 my-2 hidden sm:block"></div>
+          <div class="pl-8 py-2">
+            <div class="text-white font-bold text-2xl" style="font-family:'Poppins',sans-serif">15+</div>
+            <div class="text-slate-400 text-xs mt-0.5">Specialized Programs</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Polygon Skill Visualization -->
+      <div class="hidden lg:flex items-center justify-center relative">
+
+        <!-- Floating card 1 - top right -->
+        <div class="glass fl absolute top-4 right-0 rounded-2xl p-4 z-20" style="min-width:172px">
+          <div class="flex items-center gap-3">
+            <div class="ib ib-g"><i data-lucide="trending-up" class="w-5 h-5"></i></div>
+            <div>
+              <div class="text-white font-bold text-base" style="font-family:'Poppins',sans-serif">10,000+</div>
+              <div class="text-slate-400 text-xs">Students Trained</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating card 2 - right middle -->
+        <div class="glass fl2 absolute top-1/2 -right-6 -translate-y-1/2 rounded-2xl p-4 z-20" style="min-width:162px">
+          <div class="flex items-center gap-3">
+            <div class="ib ib-b"><i data-lucide="award" class="w-5 h-5"></i></div>
+            <div>
+              <div class="text-white font-bold text-base" style="font-family:'Poppins',sans-serif">95%</div>
+              <div class="text-slate-400 text-xs">Satisfaction Rate</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating card 3 - bottom left -->
+        <div class="glass fl3 absolute bottom-8 left-2 rounded-2xl p-4 z-20" style="min-width:160px">
+          <div class="flex items-center gap-3">
+            <div class="ib ib-p"><i data-lucide="briefcase" class="w-5 h-5"></i></div>
+            <div>
+              <div class="text-white font-bold text-base" style="font-family:'Poppins',sans-serif">500+</div>
+              <div class="text-slate-400 text-xs">Hiring Partners</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main SVG Hex Visualization -->
+        <svg viewBox="0 0 500 500" class="w-full max-w-[480px]" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="cg" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="lg1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#2563EB" stop-opacity="0.7"/>
+              <stop offset="100%" stop-color="#10B981" stop-opacity="0.7"/>
+            </linearGradient>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="3" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <filter id="glow2">
+              <feGaussianBlur stdDeviation="6" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+
+          <!-- Center glow -->
+          <circle cx="250" cy="250" r="200" fill="url(#cg)"/>
+
+          <!-- Outer hex ring (radius 175) -->
+          <polygon points="250,75 401.7,162.5 401.7,337.5 250,425 98.3,337.5 98.3,162.5"
+            fill="none" stroke="rgba(37,99,235,0.2)" stroke-width="1.5"/>
+
+          <!-- Middle hex ring (radius 115) -->
+          <polygon points="250,135 349.6,192.5 349.6,307.5 250,365 150.4,307.5 150.4,192.5"
+            fill="none" stroke="rgba(79,70,229,0.18)" stroke-width="1.5"/>
+
+          <!-- Inner hex ring (radius 60) -->
+          <polygon points="250,190 301.96,220 301.96,280 250,310 198.04,280 198.04,220"
+            fill="none" stroke="rgba(16,185,129,0.18)" stroke-width="1.5"/>
+
+          <!-- Spoke lines from center to outer vertices -->
+          <g stroke="url(#lg1)" stroke-width="1" opacity="0.45">
+            <line x1="250" y1="250" x2="250" y2="75"/>
+            <line x1="250" y1="250" x2="401.7" y2="162.5"/>
+            <line x1="250" y1="250" x2="401.7" y2="337.5"/>
+            <line x1="250" y1="250" x2="250" y2="425"/>
+            <line x1="250" y1="250" x2="98.3" y2="337.5"/>
+            <line x1="250" y1="250" x2="98.3" y2="162.5"/>
+          </g>
+
+          <!-- Vertex nodes with pulse rings -->
+          <!-- V1 Top: Aptitude -->
+          <circle cx="250" cy="75" r="28" fill="rgba(37,99,235,0)">
+            <animate attributeName="r" values="20;36;20" dur="3.2s" repeatCount="indefinite"/>
+            <animate attributeName="fill-opacity" values="0.25;0;0.25" dur="3.2s" repeatCount="indefinite"/>
+            <animate attributeName="fill" values="rgba(37,99,235,1);rgba(37,99,235,1);rgba(37,99,235,1)" dur="3.2s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="250" cy="75" r="22" fill="rgba(37,99,235,0.15)" stroke="rgba(37,99,235,0.5)" stroke-width="1.5" filter="url(#glow)"/>
+          <circle cx="250" cy="75" r="7" fill="#2563EB"/>
+
+          <!-- V2 Top-Right: Coding -->
+          <circle cx="401.7" cy="162.5" r="22" fill="rgba(79,70,229,0.15)" stroke="rgba(79,70,229,0.5)" stroke-width="1.5" filter="url(#glow)">
+            <animate attributeName="r" values="22;30;22" dur="2.8s" repeatCount="indefinite" begin="0.5s"/>
+            <animate attributeName="fill-opacity" values="0.15;0;0.15" dur="2.8s" repeatCount="indefinite" begin="0.5s"/>
+          </circle>
+          <circle cx="401.7" cy="162.5" r="7" fill="#4F46E5"/>
+
+          <!-- V3 Bottom-Right: Communication -->
+          <circle cx="401.7" cy="337.5" r="22" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.5)" stroke-width="1.5" filter="url(#glow)">
+            <animate attributeName="r" values="22;30;22" dur="3.5s" repeatCount="indefinite" begin="1s"/>
+            <animate attributeName="fill-opacity" values="0.15;0;0.15" dur="3.5s" repeatCount="indefinite" begin="1s"/>
+          </circle>
+          <circle cx="401.7" cy="337.5" r="7" fill="#10B981"/>
+
+          <!-- V4 Bottom: Soft Skills -->
+          <circle cx="250" cy="425" r="22" fill="rgba(37,99,235,0.15)" stroke="rgba(37,99,235,0.5)" stroke-width="1.5" filter="url(#glow)">
+            <animate attributeName="r" values="22;30;22" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+            <animate attributeName="fill-opacity" values="0.15;0;0.15" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+          </circle>
+          <circle cx="250" cy="425" r="7" fill="#2563EB"/>
+
+          <!-- V5 Bottom-Left: Discussion -->
+          <circle cx="98.3" cy="337.5" r="22" fill="rgba(79,70,229,0.15)" stroke="rgba(79,70,229,0.5)" stroke-width="1.5" filter="url(#glow)">
+            <animate attributeName="r" values="22;30;22" dur="2.6s" repeatCount="indefinite" begin="2s"/>
+            <animate attributeName="fill-opacity" values="0.15;0;0.15" dur="2.6s" repeatCount="indefinite" begin="2s"/>
+          </circle>
+          <circle cx="98.3" cy="337.5" r="7" fill="#4F46E5"/>
+
+          <!-- V6 Top-Left: Placement -->
+          <circle cx="98.3" cy="162.5" r="22" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.5)" stroke-width="1.5" filter="url(#glow)">
+            <animate attributeName="r" values="22;30;22" dur="3.8s" repeatCount="indefinite" begin="2.5s"/>
+            <animate attributeName="fill-opacity" values="0.15;0;0.15" dur="3.8s" repeatCount="indefinite" begin="2.5s"/>
+          </circle>
+          <circle cx="98.3" cy="162.5" r="7" fill="#10B981"/>
+
+          <!-- Vertex Labels -->
+          <text x="250" y="43" text-anchor="middle" fill="rgba(255,255,255,0.75)" font-size="12" font-family="Inter" font-weight="500">Aptitude</text>
+          <text x="430" y="160" text-anchor="start" fill="rgba(255,255,255,0.75)" font-size="12" font-family="Inter" font-weight="500">Coding</text>
+          <text x="430" y="342" text-anchor="start" fill="rgba(255,255,255,0.75)" font-size="12" font-family="Inter" font-weight="500">Communication</text>
+          <text x="250" y="458" text-anchor="middle" fill="rgba(255,255,255,0.75)" font-size="12" font-family="Inter" font-weight="500">Soft Skills</text>
+          <text x="70" y="342" text-anchor="end" fill="rgba(255,255,255,0.75)" font-size="12" font-family="Inter" font-weight="500">Discussion</text>
+          <text x="70" y="160" text-anchor="end" fill="rgba(255,255,255,0.75)" font-size="12" font-family="Inter" font-weight="500">Placement</text>
+
+          <!-- Center emblem -->
+          <circle cx="250" cy="250" r="44" fill="rgba(37,99,235,0.12)" stroke="rgba(37,99,235,0.35)" stroke-width="1.5"/>
+          <polygon points="250,226 266,237 260,256 240,256 234,237" fill="rgba(37,99,235,0.5)" stroke="#60A5FA" stroke-width="1.5"/>
+          <text x="250" y="275" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="9" font-family="Inter" letter-spacing="2">PSF</text>
+
+          <!-- Orbiting dot -->
+          <circle r="5" fill="#10B981" opacity="0.8">
+            <animateMotion dur="8s" repeatCount="indefinite">
+              <mpath href="#hexpath"/>
+            </animateMotion>
+          </circle>
+          <path id="hexpath" d="M250,75 L401.7,162.5 L401.7,337.5 L250,425 L98.3,337.5 L98.3,162.5 Z" fill="none"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
+    <span class="text-white text-xs" style="font-family:'Inter',sans-serif;letter-spacing:.1em">SCROLL</span>
+    <div class="w-px h-10 bg-gradient-to-b from-white to-transparent"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════ ABOUT ═══════════════════ -->
+<section id="about" class="py-28 bg-white relative overflow-hidden">
+  <!-- Subtle pattern -->
+  <div class="absolute inset-0 pointer-events-none" style="background-image:radial-gradient(rgba(37,99,235,.04) 1px,transparent 1px);background-size:28px 28px"></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+    <div class="grid lg:grid-cols-2 gap-20 items-center">
+
+      <!-- Left -->
+      <div>
+        <div class="stag mb-6 rv">Our Story</div>
+        <h2 class="text-4xl lg:text-5xl font-bold text-dark leading-tight mb-6 rv d1">
+          Building<br><span class="gt-d">Future-Ready</span><br>Professionals
+        </h2>
+        <p class="text-slate-600 text-base leading-relaxed mb-5 rv d2">
+          At Polygon Skill Forge, we believe every student has the potential to succeed. Our mission is to bridge the gap between academic education and industry expectations by equipping students with practical, career-focused skills.
+        </p>
+        <p class="text-slate-600 text-base leading-relaxed mb-8 rv d3">
+          We focus on creating confident professionals who can communicate effectively, solve problems, think critically, and perform successfully in today's competitive job market.
+        </p>
+
+        <div class="space-y-4 rv d4">
+          <div class="flex items-start gap-3">
+            <div class="chk mt-0.5"><i data-lucide="check" class="w-3 h-3"></i></div>
+            <p class="text-slate-600 text-sm">Master aptitude tests and crack campus placement examinations</p>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="chk mt-0.5"><i data-lucide="check" class="w-3 h-3"></i></div>
+            <p class="text-slate-600 text-sm">Build coding skills with practical, interview-focused programs</p>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="chk mt-0.5"><i data-lucide="check" class="w-3 h-3"></i></div>
+            <p class="text-slate-600 text-sm">Develop professional communication and leadership capabilities</p>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="chk mt-0.5"><i data-lucide="check" class="w-3 h-3"></i></div>
+            <p class="text-slate-600 text-sm">Excel in interviews with targeted preparation and mentorship</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: 4 value cards -->
+      <div class="grid grid-cols-2 gap-5">
+        <div class="feat-card rv rv-s d1">
+          <div class="ib ib-b mb-4"><i data-lucide="target" class="w-6 h-6"></i></div>
+          <h3 class="text-dark font-semibold text-base mb-2">Industry-Aligned</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Programs designed to match real hiring requirements and industry expectations.</p>
+        </div>
+        <div class="feat-card rv rv-s d2">
+          <div class="ib ib-g mb-4"><i data-lucide="users" class="w-6 h-6"></i></div>
+          <h3 class="text-dark font-semibold text-base mb-2">Expert Mentors</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Learn from professionals with proven industry experience and teaching excellence.</p>
+        </div>
+        <div class="feat-card rv rv-s d3">
+          <div class="ib ib-p mb-4"><i data-lucide="zap" class="w-6 h-6"></i></div>
+          <h3 class="text-dark font-semibold text-base mb-2">Practical Focus</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Hands-on learning exercises that prepare you for real-world challenges.</p>
+        </div>
+        <div class="feat-card rv rv-s d4">
+          <div class="ib ib-o mb-4"><i data-lucide="bar-chart-2" class="w-6 h-6"></i></div>
+          <h3 class="text-dark font-semibold text-base mb-2">Proven Results</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Thousands of students placed successfully across leading companies.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ PROGRAMS ═══════════════════ -->
+<section id="programs" class="py-28" style="background:#F8FAFC">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+    <div class="text-center mb-16">
+      <div class="stag mb-5 rv inline-flex">Our Offerings</div>
+      <h2 class="text-4xl lg:text-5xl font-bold text-dark mb-5 rv d1">Our Training Programs</h2>
+      <p class="text-slate-500 text-base max-w-xl mx-auto rv d2">Comprehensive skill development programs designed to make you placement-ready and career-confident.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+      <!-- Aptitude -->
+      <div class="prog-card rv d1">
+        <div class="ib ib-b mb-5"><i data-lucide="brain" class="w-6 h-6"></i></div>
+        <h3 class="text-dark font-bold text-xl mb-3">Aptitude Training</h3>
+        <p class="text-slate-500 text-sm leading-relaxed mb-5">Build strong problem-solving and logical reasoning skills to excel in campus placements and competitive examinations.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="tp">Quantitative Aptitude</span>
+          <span class="tp">Logical Reasoning</span>
+          <span class="tp">Analytical Thinking</span>
+          <span class="tp">Data Interpretation</span>
+        </div>
+      </div>
+
+      <!-- Coding -->
+      <div class="prog-card rv d2">
+        <div class="ib ib-p mb-5"><i data-lucide="code-2" class="w-6 h-6"></i></div>
+        <h3 class="text-dark font-bold text-xl mb-3">Coding Programs</h3>
+        <p class="text-slate-500 text-sm leading-relaxed mb-5">Develop technical expertise through practical and interview-focused learning designed for today's tech roles.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="tp">Java</span>
+          <span class="tp">Python</span>
+          <span class="tp">JavaScript</span>
+          <span class="tp">Data Structures</span>
+          <span class="tp">Algorithms</span>
+          <span class="tp">SQL</span>
+        </div>
+      </div>
+
+      <!-- English Communication -->
+      <div class="prog-card rv d3">
+        <div class="ib ib-g mb-5"><i data-lucide="mic" class="w-6 h-6"></i></div>
+        <h3 class="text-dark font-bold text-xl mb-3">English Communication</h3>
+        <p class="text-slate-500 text-sm leading-relaxed mb-5">Improve spoken and professional communication skills essential for workplace success and interview excellence.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="tp">Spoken English</span>
+          <span class="tp">Grammar</span>
+          <span class="tp">Vocabulary</span>
+          <span class="tp">Public Speaking</span>
+          <span class="tp">Business Communication</span>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="prog-card rv d2">
+        <div class="ib ib-o mb-5"><i data-lucide="star" class="w-6 h-6"></i></div>
+        <h3 class="text-dark font-bold text-xl mb-3">Soft Skills Development</h3>
+        <p class="text-slate-500 text-sm leading-relaxed mb-5">Build confidence and workplace-ready capabilities that differentiate you in competitive professional environments.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="tp">Leadership</span>
+          <span class="tp">Teamwork</span>
+          <span class="tp">Presentation Skills</span>
+          <span class="tp">Time Management</span>
+          <span class="tp">Emotional Intelligence</span>
+        </div>
+      </div>
+
+      <!-- GD -->
+      <div class="prog-card rv d3">
+        <div class="ib ib-c mb-5"><i data-lucide="message-circle" class="w-6 h-6"></i></div>
+        <h3 class="text-dark font-bold text-xl mb-3">Group Discussion Mastery</h3>
+        <p class="text-slate-500 text-sm leading-relaxed mb-5">Develop confidence and articulation through real-world discussions that sharpen your leadership and teamwork.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="tp">Discussion Techniques</span>
+          <span class="tp">Current Affairs</span>
+          <span class="tp">Communication Strategy</span>
+          <span class="tp">Confidence Building</span>
+        </div>
+      </div>
+
+      <!-- Placement -->
+      <div class="prog-card rv d4">
+        <div class="ib ib-b mb-5" style="background:linear-gradient(135deg,rgba(37,99,235,.15),rgba(16,185,129,.08));color:#2563EB"><i data-lucide="briefcase" class="w-6 h-6"></i></div>
+        <h3 class="text-dark font-bold text-xl mb-3">Placement Accelerator</h3>
+        <p class="text-slate-500 text-sm leading-relaxed mb-5">Comprehensive career preparation that takes you from job-seeker to confident professional ready for top roles.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="tp">Resume Building</span>
+          <span class="tp">LinkedIn Optimization</span>
+          <span class="tp">Mock Interviews</span>
+          <span class="tp">HR Preparation</span>
+          <span class="tp">Career Guidance</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ WHY CHOOSE US ═══════════════════ -->
+<section id="why-us" class="py-28 bg-white relative overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(37,99,235,.04) 0%,transparent 70%)"></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+    <div class="text-center mb-16">
+      <div class="stag mb-5 rv inline-flex">Our Difference</div>
+      <h2 class="text-4xl lg:text-5xl font-bold text-dark mb-5 rv d1">Why Students Choose<br><span class="gt-d">Polygon Skill Forge</span></h2>
+      <p class="text-slate-500 text-base max-w-xl mx-auto rv d2">We go beyond conventional training to deliver experiences that build lasting confidence and career success.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="feat-card rv d1">
+        <div class="ib ib-b mb-4"><i data-lucide="graduation-cap" class="w-6 h-6"></i></div>
+        <h3 class="font-bold text-dark text-base mb-2">Industry-Experienced Trainers</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">Learn from professionals with real-world expertise and deep domain knowledge.</p>
+      </div>
+      <div class="feat-card rv d2">
+        <div class="ib ib-g mb-4"><i data-lucide="zap" class="w-6 h-6"></i></div>
+        <h3 class="font-bold text-dark text-base mb-2">Practical Learning Approach</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">Focus on hands-on exercises and real-world application over theoretical content.</p>
+      </div>
+      <div class="feat-card rv d3">
+        <div class="ib ib-p mb-4"><i data-lucide="user-check" class="w-6 h-6"></i></div>
+        <h3 class="font-bold text-dark text-base mb-2">Personalized Mentorship</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">Individual guidance and dedicated support to help each student grow at their own pace.</p>
+      </div>
+      <div class="feat-card rv d4">
+        <div class="ib ib-o mb-4"><i data-lucide="target" class="w-6 h-6"></i></div>
+        <h3 class="font-bold text-dark text-base mb-2">Placement-Oriented Training</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">Programs precisely aligned with what top hiring companies look for in candidates.</p>
+      </div>
+      <div class="feat-card rv d2">
+        <div class="ib ib-c mb-4"><i data-lucide="users" class="w-6 h-6"></i></div>
+        <h3 class="font-bold text-dark text-base mb-2">Small Batch Learning</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">Better attention, richer interaction, and focused feedback in intimate batch settings.</p>
+      </div>
+      <div class="feat-card rv d3">
+        <div class="ib ib-b mb-4"><i data-lucide="clipboard-list" class="w-6 h-6"></i></div>
+        <h3 class="font-bold text-dark text-base mb-2">Continuous Assessment</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">Regular evaluations, mock tests, and detailed feedback to track and accelerate growth.</p>
+      </div>
+      <div class="feat-card rv d4">
+        <div class="ib ib-g mb-4"><i data-lucide="trending-up" class="w-6 h-6"></i></div>
+        <h3 class="font-bold text-dark text-base mb-2">Career Development Focus</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">Training designed around employability and long-term professional growth, not just exams.</p>
+      </div>
+      <div class="feat-card rv d5">
+        <div class="ib ib-p mb-4"><i data-lucide="heart" class="w-6 h-6"></i></div>
+        <h3 class="font-bold text-dark text-base mb-2">Student-Centric Environment</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">A supportive, encouraging learning culture where every student feels valued and motivated.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ JOURNEY / TIMELINE ═══════════════════ -->
+<section id="journey" class="py-28 ds relative overflow-hidden">
+  <div class="hgrid"></div>
+  <div class="absolute pointer-events-none" style="width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(37,99,235,.15) 0%,transparent 70%);top:-100px;right:-100px"></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+    <div class="text-center mb-16">
+      <div class="stag stag-w mb-5 rv inline-flex">Our Process</div>
+      <h2 class="text-4xl lg:text-5xl font-bold text-white mb-5 rv d1">How We Transform<br><span class="gt">Potential Into Success</span></h2>
+      <p class="text-slate-400 text-base max-w-xl mx-auto rv d2">A structured, personalized journey that takes students from assessment to career-ready professionals.</p>
+    </div>
+
+    <!-- Timeline desktop: 3+3 two rows -->
+    <div class="grid md:grid-cols-3 gap-8 mb-8">
+      <div class="glass rounded-2xl p-7 rv d1">
+        <div class="tldot mb-5">1</div>
+        <h3 class="text-white font-bold text-lg mb-3">Assessment</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">We begin by understanding each student's strengths, skill gaps, and career aspirations through a comprehensive evaluation.</p>
+      </div>
+      <div class="glass rounded-2xl p-7 rv d2">
+        <div class="tldot mb-5">2</div>
+        <h3 class="text-white font-bold text-lg mb-3">Personalized Learning Path</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">A focused development plan is created tailored to each student's unique needs and goals for maximum effectiveness.</p>
+      </div>
+      <div class="glass rounded-2xl p-7 rv d3">
+        <div class="tldot mb-5">3</div>
+        <h3 class="text-white font-bold text-lg mb-3">Skill Development</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Intensive hands-on learning sessions and practical exercises build real competency across all targeted skill areas.</p>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="glass rounded-2xl p-7 rv d2">
+        <div class="tldot mb-5" style="background:linear-gradient(135deg,#10B981,#059669)">4</div>
+        <h3 class="text-white font-bold text-lg mb-3">Performance Evaluation</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Continuous assessments, mock tests, and detailed feedback sessions track progress and identify areas for improvement.</p>
+      </div>
+      <div class="glass rounded-2xl p-7 rv d3">
+        <div class="tldot mb-5" style="background:linear-gradient(135deg,#10B981,#059669)">5</div>
+        <h3 class="text-white font-bold text-lg mb-3">Interview Readiness</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Rigorous mock interviews, GD sessions, and communication practice bring students to peak interview performance.</p>
+      </div>
+      <div class="glass rounded-2xl p-7 rv d4" style="border-color:rgba(16,185,129,.3)">
+        <div class="tldot mb-5" style="background:linear-gradient(135deg,#10B981,#059669)">6</div>
+        <h3 class="text-white font-bold text-lg mb-3">Career Success</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Students emerge industry-ready — confident, skilled, and equipped to excel in their placements and long-term careers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ IMPACT ═══════════════════ -->
+<section id="impact" class="py-28 bg-white relative overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse 70% 60% at 50% 100%,rgba(37,99,235,.04) 0%,transparent 70%)"></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+    <div class="text-center mb-16">
+      <div class="stag mb-5 rv inline-flex">Numbers That Matter</div>
+      <h2 class="text-4xl lg:text-5xl font-bold text-dark rv d1">Our Growing <span class="gt-d">Impact</span></h2>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6">
+      <div class="text-center rv d1">
+        <div class="cnt text-5xl lg:text-6xl counter" data-target="10000" data-suffix="+">0</div>
+        <div class="w-10 h-0.5 bg-gradient-to-r from-primary to-secondary mx-auto mt-3 mb-2 rounded-full"></div>
+        <div class="text-slate-500 text-sm font-medium">Students Trained</div>
+      </div>
+      <div class="text-center rv d2">
+        <div class="cnt text-5xl lg:text-6xl counter" data-target="500" data-suffix="+">0</div>
+        <div class="w-10 h-0.5 bg-gradient-to-r from-primary to-secondary mx-auto mt-3 mb-2 rounded-full"></div>
+        <div class="text-slate-500 text-sm font-medium">Hiring Partners</div>
+      </div>
+      <div class="text-center rv d3">
+        <div class="cnt text-5xl lg:text-6xl counter" data-target="95" data-suffix="%">0</div>
+        <div class="w-10 h-0.5 bg-gradient-to-r from-primary to-secondary mx-auto mt-3 mb-2 rounded-full"></div>
+        <div class="text-slate-500 text-sm font-medium">Student Satisfaction</div>
+      </div>
+      <div class="text-center rv d4">
+        <div class="cnt text-5xl lg:text-6xl counter" data-target="15" data-suffix="+">0</div>
+        <div class="w-10 h-0.5 bg-gradient-to-r from-primary to-secondary mx-auto mt-3 mb-2 rounded-full"></div>
+        <div class="text-slate-500 text-sm font-medium">Specialized Programs</div>
+      </div>
+      <div class="text-center rv d5 col-span-2 lg:col-span-1">
+        <div class="cnt text-5xl lg:text-6xl counter" data-target="100" data-suffix="+">0</div>
+        <div class="w-10 h-0.5 bg-gradient-to-r from-primary to-secondary mx-auto mt-3 mb-2 rounded-full"></div>
+        <div class="text-slate-500 text-sm font-medium">Workshops Conducted</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ VISION & MISSION ═══════════════════ -->
+<section id="vision" class="py-28 ds relative overflow-hidden">
+  <div class="hgrid"></div>
+  <div class="absolute pointer-events-none" style="width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(79,70,229,.12) 0%,transparent 70%);bottom:-200px;left:-100px"></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+    <div class="text-center mb-16">
+      <div class="stag stag-w mb-5 rv inline-flex">What Drives Us</div>
+      <h2 class="text-4xl lg:text-5xl font-bold text-white rv d1">Vision <span class="gt">&amp;</span> Mission</h2>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-8">
+      <!-- Mission -->
+      <div class="glass rounded-2xl p-10 rv rv-l">
+        <div class="flex items-center gap-4 mb-7">
+          <div class="ib ib-b" style="background:rgba(37,99,235,.2);color:#60A5FA;width:60px;height:60px;border-radius:18px">
+            <i data-lucide="rocket" class="w-7 h-7"></i>
+          </div>
+          <div>
+            <div class="text-slate-400 text-xs font-semibold tracking-widest uppercase mb-1">Our Mission</div>
+            <h3 class="text-white font-bold text-2xl">What We Do</h3>
+          </div>
+        </div>
+        <p class="text-slate-300 text-base leading-relaxed mb-6">
+          To empower students with practical, industry-relevant skills that unlock career opportunities and lifelong success.
+        </p>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          Whether students aim to improve communication skills, master coding, crack aptitude tests, or excel in interviews, Polygon Skill Forge provides the guidance and mentorship needed to achieve sustainable success in the modern world.
+        </p>
+        <div class="mt-8 pt-8 border-t border-white/10 grid grid-cols-2 gap-6">
+          <div>
+            <div class="text-accent font-bold text-2xl" style="font-family:'Poppins',sans-serif">Practical</div>
+            <div class="text-slate-400 text-xs mt-1">Skill-first approach</div>
+          </div>
+          <div>
+            <div class="text-accent font-bold text-2xl" style="font-family:'Poppins',sans-serif">Impactful</div>
+            <div class="text-slate-400 text-xs mt-1">Career-focused outcomes</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vision -->
+      <div class="glass rounded-2xl p-10 rv rv-r d1" style="border-color:rgba(16,185,129,.2)">
+        <div class="flex items-center gap-4 mb-7">
+          <div class="ib ib-g" style="background:rgba(16,185,129,.2);color:#34D399;width:60px;height:60px;border-radius:18px">
+            <i data-lucide="eye" class="w-7 h-7"></i>
+          </div>
+          <div>
+            <div class="text-slate-400 text-xs font-semibold tracking-widest uppercase mb-1">Our Vision</div>
+            <h3 class="text-white font-bold text-2xl">Where We're Headed</h3>
+          </div>
+        </div>
+        <p class="text-slate-300 text-base leading-relaxed mb-6">
+          To transform students into confident professionals who can adapt, innovate, and lead in the modern workplace.
+        </p>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          We envision a world where every student — regardless of their academic background — has access to the skills, mentorship, and opportunities required to build a fulfilling and successful career in any industry.
+        </p>
+        <div class="mt-8 pt-8 border-t border-white/10 grid grid-cols-2 gap-6">
+          <div>
+            <div class="font-bold text-2xl gt" style="font-family:'Poppins',sans-serif">Confident</div>
+            <div class="text-slate-400 text-xs mt-1">Assured professionals</div>
+          </div>
+          <div>
+            <div class="font-bold text-2xl gt" style="font-family:'Poppins',sans-serif">Adaptive</div>
+            <div class="text-slate-400 text-xs mt-1">Future-ready mindset</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FUTURE / CAREER SUCCESS ═══════════════════ -->
+<section id="future" class="py-28" style="background:#F8FAFC">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-20 items-center">
+
+      <!-- Left content -->
+      <div>
+        <div class="stag mb-6 rv">Beyond the Classroom</div>
+        <h2 class="text-4xl lg:text-5xl font-bold text-dark mb-6 rv d1">Preparing Students<br>for <span class="gt-d">Future Success</span></h2>
+        <p class="text-slate-600 text-base leading-relaxed mb-4 rv d2">
+          Success today requires more than academic knowledge. At Polygon Skill Forge, we prepare students to communicate confidently, solve problems effectively, work collaboratively, and navigate professional environments successfully.
+        </p>
+        <p class="text-slate-600 text-base leading-relaxed mb-8 rv d3">
+          Our goal is to help students become not only employable but also adaptable lifelong learners who thrive in every stage of their careers.
+        </p>
+        <a href="#programs" class="btn-p btn-p-lg rv d4">
+          <i data-lucide="compass" class="w-4 h-4"></i>
+          Explore Our Programs
+        </a>
+      </div>
+
+      <!-- Right: icon grid -->
+      <div class="grid grid-cols-2 gap-5">
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm rv rv-s d1">
+          <div class="ib ib-b mb-4"><i data-lucide="message-square" class="w-6 h-6"></i></div>
+          <h4 class="text-dark font-semibold text-sm mb-1">Confident Communication</h4>
+          <p class="text-slate-400 text-xs leading-relaxed">Speak, present, and persuade with clarity in any professional setting.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm rv rv-s d2">
+          <div class="ib ib-p mb-4"><i data-lucide="cpu" class="w-6 h-6"></i></div>
+          <h4 class="text-dark font-semibold text-sm mb-1">Problem Solving</h4>
+          <p class="text-slate-400 text-xs leading-relaxed">Develop analytical thinking to tackle complex challenges with ease.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm rv rv-s d3">
+          <div class="ib ib-g mb-4"><i data-lucide="users-2" class="w-6 h-6"></i></div>
+          <h4 class="text-dark font-semibold text-sm mb-1">Collaborative Work</h4>
+          <p class="text-slate-400 text-xs leading-relaxed">Build teamwork skills and emotional intelligence for workplace success.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm rv rv-s d4">
+          <div class="ib ib-o mb-4"><i data-lucide="compass" class="w-6 h-6"></i></div>
+          <h4 class="text-dark font-semibold text-sm mb-1">Career Navigation</h4>
+          <p class="text-slate-400 text-xs leading-relaxed">Expert guidance to map your career path and seize opportunities.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm rv rv-s d3">
+          <div class="ib ib-c mb-4"><i data-lucide="refresh-cw" class="w-6 h-6"></i></div>
+          <h4 class="text-dark font-semibold text-sm mb-1">Lifelong Learning</h4>
+          <p class="text-slate-400 text-xs leading-relaxed">Cultivate a growth mindset that keeps you ahead throughout your career.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm rv rv-s d4">
+          <div class="ib ib-b mb-4" style="background:linear-gradient(135deg,rgba(37,99,235,.12),rgba(16,185,129,.08));color:#2563EB"><i data-lucide="shield-check" class="w-6 h-6"></i></div>
+          <h4 class="text-dark font-semibold text-sm mb-1">Industry Readiness</h4>
+          <p class="text-slate-400 text-xs leading-relaxed">Step into your first role fully prepared with skills employers value most.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ TESTIMONIALS ═══════════════════ -->
+<section id="testimonials" class="py-28 bg-white relative overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse 80% 50% at 50% 50%,rgba(37,99,235,.03) 0%,transparent 70%)"></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+    <div class="text-center mb-16">
+      <div class="stag mb-5 rv inline-flex">Student Stories</div>
+      <h2 class="text-4xl lg:text-5xl font-bold text-dark mb-5 rv d1">Student Success <span class="gt-d">Stories</span></h2>
+      <p class="text-slate-500 text-base max-w-lg mx-auto rv d2">Real outcomes from real students — their words reflect the transformation Polygon Skill Forge delivers.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-7">
+
+      <div class="tcard rv d1">
+        <div class="flex items-center gap-1 mb-5">
+          <i data-lucide="star" class="w-4 h-4 str"></i>
+          <i data-lucide="star" class="w-4 h-4 str"></i>
+          <i data-lucide="star" class="w-4 h-4 str"></i>
+          <i data-lucide="star" class="w-4 h-4 str"></i>
+          <i data-lucide="star" class="w-4 h-4 str"></i>
+        </div>
+        <p class="text-slate-600 text-sm leading-relaxed mb-6">"Polygon Skill Forge helped me strengthen my aptitude and communication skills. The confidence I gained during training helped me clear my placement interviews successfully. I cannot thank the team enough for their guidance and support throughout my journey."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm text-white" style="background:linear-gradient(135deg,#2563EB,#4F46E5)">AR</div>
+          <div>
+            <div class="text-dark font-semibold text-sm">Aditya Rajan</div>
+            <div class="text-slate-400 text-xs">Software Engineer, Infosys</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tcard rv d2">
+        <div class="flex items-center gap-1 mb-5">
+          <i data-lucide="star" class="w-4 h-4 str"></i>
+          <i data-lucide="star" class="w-4 h-4 str"></i>
+          <i data-lucide="star" class="w-4 h-4 str"></i>
+          <i data-lucide="star" class="w-4 h-4 str"></i>
+          <i data-lucide="star" class="w-4 h-4 str"></i>
+        </div>
+        <p class="text-slate-600 text-sm leading-relaxed mb-6">"The coding sessions and mock interviews gave me practical exposure that college education alone could not provide. The mentors here are incredibly supportive and know exactly what companies are looking for. I cracked three placement rounds with confidence."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm text-white" style="background:linear-gradient(135deg,#10B981,#059669)">PM</div>
+          <div>
+            <div class="text-dark font-semibold text-sm">Priya Menon</div>
+            <div class="text-slate-400 text-xs">Associate Developer, TCS</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tcard rv d3">
+        <div class="flex items-center gap-1 mb-5">
+          <i data-lucide="star" class="w-4 h-4 str"></i>
+          <i data-lucide="star" class="w-4 h-4 str"></i>
+          <i data-lucide="star" class="w-4 h-4 str"></i>
+          <i data-lucide="star" class="w-4 h-4 str"></i>
+          <i data-lucide="star" class="w-4 h-4 str"></i>
+        </div>
+        <p class="text-slate-600 text-sm leading-relaxed mb-6">"I joined with very little confidence in my English communication. After the program, I could speak fluently in group discussions and HR rounds. The soft skills training and presentation practice changed my personality completely. I'm now working at Wipro."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm text-white" style="background:linear-gradient(135deg,#4F46E5,#7C3AED)">SK</div>
+          <div>
+            <div class="text-dark font-semibold text-sm">Suresh Kumar</div>
+            <div class="text-slate-400 text-xs">Business Analyst, Wipro</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ CONTACT ═══════════════════ -->
+<section id="contact" class="py-28" style="background:#F8FAFC">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <div class="stag mb-5 rv inline-flex">Reach Us</div>
+      <h2 class="text-4xl lg:text-5xl font-bold text-dark mb-5 rv d1">Get In <span class="gt-d">Touch</span></h2>
+      <p class="text-slate-500 text-base max-w-md mx-auto rv d2">Have questions about our programs? We'd love to hear from you. Reach out through any of the channels below.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-7 mb-12">
+      <div class="ccard rv d1">
+        <div class="ib ib-b mx-auto mb-5"><i data-lucide="phone" class="w-6 h-6"></i></div>
+        <h3 class="text-dark font-bold text-lg mb-2">Phone</h3>
+        <p class="text-slate-500 text-sm mb-3">Call us Monday to Saturday</p>
+        <a href="tel:+91XXXXXXXXXX" class="text-primary font-semibold text-base hover:text-secondary transition-colors">+91 XXXXX XXXXX</a>
+      </div>
+      <div class="ccard rv d2">
+        <div class="ib ib-g mx-auto mb-5"><i data-lucide="mail" class="w-6 h-6"></i></div>
+        <h3 class="text-dark font-bold text-lg mb-2">Email</h3>
+        <p class="text-slate-500 text-sm mb-3">Drop us a message anytime</p>
+        <a href="mailto:info@polygonskillforge.com" class="text-primary font-semibold text-sm hover:text-secondary transition-colors break-all">info@polygonskillforge.com</a>
+      </div>
+      <div class="ccard rv d3">
+        <div class="ib ib-p mx-auto mb-5"><i data-lucide="map-pin" class="w-6 h-6"></i></div>
+        <h3 class="text-dark font-bold text-lg mb-2">Location</h3>
+        <p class="text-slate-500 text-sm mb-3">Visit our training center</p>
+        <p class="text-dark font-semibold text-sm">Bangalore, Karnataka, India</p>
+      </div>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="text-center rv">
+      <p class="text-slate-500 text-sm mb-5">Follow us on social media</p>
+      <div class="flex items-center justify-center gap-4">
+        <a href="#" class="soc" title="LinkedIn"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+        <a href="#" class="soc" title="Instagram"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+        <a href="#" class="soc" title="Facebook"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        <a href="#" class="soc" title="YouTube"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer class="ftr pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-white/8">
+
+      <!-- Brand -->
+      <div class="lg:col-span-1">
+        <div class="flex items-center gap-3 mb-5">
+          <svg width="34" height="34" viewBox="0 0 36 36" fill="none">
+            <polygon points="18,2 33,10 33,26 18,34 3,26 3,10" fill="url(#fg1)"/>
+            <polygon points="18,8 27,13 27,23 18,28 9,23 9,13" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5"/>
+            <circle cx="18" cy="18" r="4" fill="white" opacity="0.85"/>
+            <defs>
+              <linearGradient id="fg1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#2563EB"/>
+                <stop offset="100%" stop-color="#4F46E5"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <div>
+            <span class="text-white font-bold" style="font-family:'Poppins',sans-serif">Polygon</span><span style="color:#60A5FA;font-family:'Poppins',sans-serif;font-weight:700"> Skill Forge</span>
+          </div>
+        </div>
+        <p class="text-slate-400 text-sm leading-relaxed mb-6">Building Every Side of Your Success. Empowering students with skills, confidence, and career readiness.</p>
+        <div class="flex gap-3">
+          <a href="#" class="soc" title="LinkedIn"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a href="#" class="soc" title="Instagram"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+          <a href="#" class="soc" title="Facebook"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="#" class="soc" title="YouTube"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="text-white font-semibold text-sm mb-5 tracking-wide" style="font-family:'Poppins',sans-serif">Quick Links</h4>
+        <ul class="space-y-3">
+          <li><a href="#hero" class="text-slate-400 text-sm hover:text-white transition-colors">Home</a></li>
+          <li><a href="#about" class="text-slate-400 text-sm hover:text-white transition-colors">About Us</a></li>
+          <li><a href="#programs" class="text-slate-400 text-sm hover:text-white transition-colors">Programs</a></li>
+          <li><a href="#why-us" class="text-slate-400 text-sm hover:text-white transition-colors">Why Choose Us</a></li>
+          <li><a href="#vision" class="text-slate-400 text-sm hover:text-white transition-colors">Vision &amp; Mission</a></li>
+          <li><a href="#contact" class="text-slate-400 text-sm hover:text-white transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Training Areas -->
+      <div>
+        <h4 class="text-white font-semibold text-sm mb-5 tracking-wide" style="font-family:'Poppins',sans-serif">Training Areas</h4>
+        <ul class="space-y-3">
+          <li><a href="#programs" class="text-slate-400 text-sm hover:text-white transition-colors">Aptitude Training</a></li>
+          <li><a href="#programs" class="text-slate-400 text-sm hover:text-white transition-colors">Coding Programs</a></li>
+          <li><a href="#programs" class="text-slate-400 text-sm hover:text-white transition-colors">English Communication</a></li>
+          <li><a href="#programs" class="text-slate-400 text-sm hover:text-white transition-colors">Soft Skills Development</a></li>
+          <li><a href="#programs" class="text-slate-400 text-sm hover:text-white transition-colors">Group Discussion</a></li>
+          <li><a href="#programs" class="text-slate-400 text-sm hover:text-white transition-colors">Placement Preparation</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="text-white font-semibold text-sm mb-5 tracking-wide" style="font-family:'Poppins',sans-serif">Contact Us</h4>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3">
+            <i data-lucide="map-pin" class="w-4 h-4 text-primary mt-0.5 flex-shrink-0"></i>
+            <span class="text-slate-400 text-sm">Bangalore, Karnataka, India</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i data-lucide="phone" class="w-4 h-4 text-primary flex-shrink-0"></i>
+            <a href="tel:+91XXXXXXXXXX" class="text-slate-400 text-sm hover:text-white transition-colors">+91 XXXXX XXXXX</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <i data-lucide="mail" class="w-4 h-4 text-primary flex-shrink-0"></i>
+            <a href="mailto:info@polygonskillforge.com" class="text-slate-400 text-sm hover:text-white transition-colors break-all">info@polygonskillforge.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-slate-500 text-sm">© 2026 Polygon Skill Forge. All Rights Reserved.</p>
+      <p class="text-slate-600 text-xs">Building Every Side of Your Success</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════ SCRIPTS ═══════════════════ -->
+<script>
+// Init Lucide Icons
+lucide.createIcons();
+
+// ── Navbar scroll effect ──────────────────────────────
+const nav = document.getElementById('nav');
+function handleScroll() {
+  if (window.scrollY > 60) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+}
+window.addEventListener('scroll', handleScroll, { passive: true });
+handleScroll();
+
+// ── Scroll reveal animations ──────────────────────────
+const revealEls = document.querySelectorAll('.rv, .rv-l, .rv-r, .rv-s');
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in');
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+revealEls.forEach(el => revealObs.observe(el));
+
+// ── Counter animation ─────────────────────────────────
+function animateCount(el) {
+  const target = parseInt(el.dataset.target);
+  const suffix = el.dataset.suffix || '';
+  const duration = 1800;
+  const steps = 60;
+  const inc = target / steps;
+  let current = 0;
+  let step = 0;
+  const ease = t => t < 0.5 ? 2*t*t : -1+(4-2*t)*t;
+  const timer = setInterval(() => {
+    step++;
+    const progress = ease(step / steps);
+    current = Math.floor(progress * target);
+    el.textContent = current.toLocaleString() + suffix;
+    if (step >= steps) {
+      el.textContent = target.toLocaleString() + suffix;
+      clearInterval(timer);
+    }
+  }, duration / steps);
+}
+
+const counterEls = document.querySelectorAll('.counter');
+const counterObs = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !entry.target.dataset.done) {
+      entry.target.dataset.done = '1';
+      animateCount(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+counterEls.forEach(el => counterObs.observe(el));
+
+// ── Smooth scroll for all anchor links ───────────────
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', e => {
+    const id = link.getAttribute('href');
+    if (id === '#') return;
+    const target = document.querySelector(id);
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
