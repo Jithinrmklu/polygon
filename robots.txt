@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jithinrmklu.github.io/polygon/sitemap.xml
+Sitemap: https://polygonskillforge.in/sitemap.xml
